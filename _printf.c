@@ -71,7 +71,7 @@ int _printf(const char *format, ...)
 		j = 0;
 		while (fmts[j].id)
 		{
-			if (format[i] == fmts[j].id)
+			if (format[i] == fmts[j].id && format[i-1] == '%')
 			{
 				fmts[j].f(ap);
 				if (format[i + 1] != '\0')
