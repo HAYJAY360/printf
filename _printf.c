@@ -8,7 +8,7 @@
  *
  * Return: int, number of charachters printed
 */
-int _printf(const char * const format, ...)
+int _printf(const char *format, ...)
 {
 	return (0);
 }
